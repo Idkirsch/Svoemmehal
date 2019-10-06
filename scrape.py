@@ -4,8 +4,13 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
+
 res = requests.get("https://svoemkbh.kk.dk/hilleroedgade-bad")
-soup = BeautifulSoup(res.content,'html')
-table = soup.find_all('table')[0] 
-df = pd.read_html(str(table))
-print(df[0].to_json(orient='records'))
+print(res)
+
+soup = BeautifulSoup(res.content, features="html.parser")
+print(soup)
+
+# table = soup.find_all('') 
+# df = pd.read_html(str(table))
+# print(df[0].to_json(orient='records'))
