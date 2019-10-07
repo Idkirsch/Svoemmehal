@@ -7,12 +7,17 @@ import time
 from selenium import webdriver
 
 
-driver=webdriver.Chrome(executable_path=r"C:/Program Files (x86)/chromedriver")
-driver.get("https://svoemkbh.kk.dk/hilleroedgade-bad")
+# driver=webdriver.Chrome(executable_path=r"C:/Program Files (x86)/chromedriver")
+data = requests.get("https://l.vemcount.com/embed/data/W5mOsIMsECIwoYZ").content
+print(data)
+# driver.get("https://l.vemcount.com/embed/data/W5mOsIMsECIwoYZ")
 
-noget = driver.find_element_by_name("description")
-nogetAndet = noget.get_attribute("innerHTML")
-print(nogetAndet)
+# Find parser der kan læse json for at skaffe data
+
+
+# noget = driver.find_element_by_name("description")
+# nogetAndet = noget.get_attribute("innerHTML")
+# print(nogetAndet)
 
 # Wait 5 seconds before scraping 
 # time.sleep(5)
