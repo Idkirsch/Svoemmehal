@@ -1,10 +1,10 @@
 # We want to scrape data from the website of the local swimmingpool and later make an animation
 #
-import pandas as pd
+# import pandas as pd
 import requests
-from bs4 import BeautifulSoup
-import time
-from selenium import webdriver
+# from bs4 import BeautifulSoup
+# import time
+# from selenium import webdriver
 import json
 
 
@@ -16,8 +16,8 @@ data = requests.get("https://l.vemcount.com/embed/data/W5mOsIMsECIwoYZ").content
 
 # Find parser der kan læse json for at skaffe data
 y = json.loads(data)
-print("antal svømmere:")
-print(y["value"])
+print("antal svømmere: "+str(y["value"]))
+
 
 
 # noget = driver.find_element_by_name("description")
