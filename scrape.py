@@ -16,3 +16,12 @@ while i == 0:
 	y = json.loads(data)
 	print("antal svømmere: "+str(y["value"]))
 	time.sleep(1)
+
+	# afile = open('test.json','w')
+	# afile.write(json.dumps(alerts,encoding='UTF-8'))
+	# afile.close()
+
+
+	with open('data.txt','w') as outfile:
+		json.dump(data, data)
+
