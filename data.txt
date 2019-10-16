@@ -1,0 +1,1 @@
+{"value": 0, "decimals": 0, "compares": {"sw-prev_week": {"value": -9, "label": "Samme ugedag, sidste uge"}}}
