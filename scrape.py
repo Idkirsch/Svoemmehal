@@ -3,6 +3,16 @@
 import requests
 import time
 import json
+import psutil
+# import matplotlib.pyplot as pyplot
+
+# %matplotlib notebook
+# plt.rcParams['animation.html'] = 'jshtml'
+
+# fig = plt.figure()
+# ax = fig.add_subplot(111)
+# fig.show()
+
 
 yWas = None
 
