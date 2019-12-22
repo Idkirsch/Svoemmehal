@@ -1,0 +1,24 @@
+{
+  "name": "Svoemmehal",
+  "version": "1.0.0",
+  "description": "Vi vil scrape svømmehallens hjemmeside",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Idkirsch/Svoemmehal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Idkirsch/Svoemmehal/issues"
+  },
+  "homepage": "https://github.com/Idkirsch/Svoemmehal#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
