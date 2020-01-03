@@ -1,20 +1,28 @@
 <html lang="en">
  <head>
    <title>Node Workshop</title>
+
  </head>
  <body>
      <h1 style="color: green;">
         Hej Karl :-)
      </h1>
- </body>
+<!--      <p> {{ antalBadere }} </p> -->
+ 
 
- <script>
+<p id="demo"></p>
+
+<script>
+var hello;
+
+hello = function() {
+  return "Hello World! her er js i html";
+}
+
+document.getElementById("demo").innerHTML = hello();
+
  	
- 	console.log("Scrapit i htmæl");
-
-
-
  </script>
 
-
+</body>
 </html>

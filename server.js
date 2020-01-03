@@ -8,6 +8,7 @@ server.get("/json", (req, res) =>{
 });
 
 server.get("/", (req, res) => {
+   var antalBadere = 'det scrapede antal'
    res.sendFile(__dirname + '/index.html');
 });
 
@@ -22,6 +23,11 @@ server.get("/items", (req, res) => {
                       { "id": 2, "name": "apple" }
                      ] 
            });
+});
+
+server.get("/badere", (req, res) => {
+var antalBadere = 2
+   res.json({ antalBadere });
 });
 
 server.get("/info", (req, res) => {
