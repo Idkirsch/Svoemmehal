@@ -18,10 +18,9 @@ import re
 
 
 chrome_options = webdriver.ChromeOptions()
-prefs = {'download.default_directory' : r'/Users/kkr/Documents/Dev/ida/svoemmehal/output', "directory_upgrade": True}
-chrome_options.add_experimental_option('prefs', prefs)
 chrome_options.add_argument("--start-maximized") # needed for download to specific directory ... 
 
+# SKIFT PATH TIL DEN PATH DU LÆGGER CHROMEDRIVEREN PÅ:
 driver = webdriver.Chrome(executable_path=r'/Users/kkr/chromedriver', options=chrome_options)
 
 def super_get(url):
