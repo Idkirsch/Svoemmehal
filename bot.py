@@ -58,10 +58,18 @@ try:
 	print("r: ", str(dump['results'][0]['lexicalEntries'][0]['entries'][0]['senses'][0]['definitions'][0]))
 	# x = 0
 
+	word = word_id.lower()
+	first = word[0]
+
+	if len(word) > 0 and word.isalpha():
+		if first in ('a', 'e', 'i', 'o', 'u'):  #or `if first in 'aeiou'`
+			anFix = 'n '
+		else:
+			anFix = ' '
 
 	# dump = r.json()
-	output = "A human being is like a "+word_id+": "+str(dump['results'][0]['lexicalEntries'][0]['entries'][0]['senses'][0]['definitions'][0])
-	print("A human being is like a "+word_id+": "+str(dump['results'][0]['lexicalEntries'][0]['entries'][0]['senses'][0]['definitions'][0]))
+	output = "A human being is like a"+anFix+word_id+": "+str(dump['results'][0]['lexicalEntries'][0]['entries'][0]['senses'][0]['definitions'][0])
+	print(output)
 	os.system("say \""+output+"\"")
 
 	# Authenticate to Twitter
